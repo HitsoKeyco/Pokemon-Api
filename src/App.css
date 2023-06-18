@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sunflower', sans-serif; /*300 500*/
+    font-size: 1rem;
+}
+
+.home_container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7 , 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    background-color: rgb(248, 248, 248);
+
+
+}
+
+.img_top{
+    
+    max-width: 100%;
+    height: auto;      display: grid;
+    grid-column: 2 / 7;
+    grid-row: 5/6;
+
+    justify-self: center;
+}
+
+.img_bottom{
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 8;
+    grid-row: 14/15;
+    
+}
+
+.welcome{
+    width: 100%;
+    height: max-content;       
+    display: grid;
+    grid-column: 2 / 7;
+    grid-row: 6/7;
+    text-align: center;
+    font-size: 1em;
+}
+
+.hello_trainer{
+    text-align: center;
+    color: red;
+    font-size: 2em;
+    padding-top: 25px
+}
+
+.form{
+    width: 100%;
+    height: 100%;       
+    display: grid;
+    grid-column: 2 / 7;
+    grid-row: 7/8;
+    justify-items: center;
+}
+
+.elements_form{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input{
+    width: clamp(150px, 50%, 250px);
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px 5px 5px 5px; 
+    border: rgb(224, 222, 222) solid 2px;
+    
+}
+
+input::selection{
+    border: none
+}
+
+button{
+    width: clamp(150px, 10%, 250px);
+    height: 40px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.headerpokedex{
+    width: 100vw;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formpokedex{
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.item-accion{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    
+    
+}
+
+.inputpokedex{
+    width: clamp(100px,50%,250px);
+    margin: 0;
+}
+
+.buttonpokedex{
+    width: clamp(100px,50%,150px);
+    margin: 0;
+    
+}
+
+
+.accion{
+    display: flex;
+}
+.introwelcome{
+    font-size: 2em;
+}
+
+select{
+    width: clamp(120px,50%,200px);
+    height: 40px;
+    border-radius: 5px;  
+}
+
+.contpokecard{
+    width: 100vw;
+    
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedorCard{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+
+.nameUser{
+    font-size: 1em;
+
+}
+
+.card_pokemon {
+    width: 100%;
+    max-width: 320px;
+    height: 450px;    
+    border-radius: 0.5em;
+    font-size: 1rem;
+    background-color: currentColor;
+    
+    
+
+}
+
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    position: relative;
+}
+
+
+.img_pokemon {
+    max-width: 200px;
+    position: absolute;
+    top: 15px;
+}
+
+.description_pokemon{
+    background-color: white;
+    border-radius: 0 0 0.5em 0.5em;
+    height: 60%;
+}
+
+
+
+.name_pokemon{
+    text-transform: capitalize;
+    padding-top: 35px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.type_pokemon{
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.stack_pokemon{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.list_stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 50%;
+    flex-direction: column;
+    
+}
+
+.stat_name{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(116, 110, 110);
+}
+
+.stat_base{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(29, 28, 28);
+    padding-bottom: 15px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.fire {
+    background: linear-gradient(180deg, rgba(233,94,58,1) 20%, rgba(230,125,38,1) 50%);
+    border: 10px solid  rgba(230,125,38,1);
+}
+
+.water {
+    background: linear-gradient(180deg, rgba(20,92,184,1) 20%, rgba(48,136,248,1) 50%);
+    border: 10px solid rgba(48,136,248,1);
+}
+
+.bug {
+    background: linear-gradient(180deg, rgba(103,58,147,1) 20%, rgba(178,119,237,1) 50%);
+    border: 10px solid rgba(178,119,237,1);
+}
+
+.grass {    
+    background: linear-gradient(180deg, rgba(129,200,198,1) 20%, rgba(179,219,185,1) 50%);
+    border: 10px solid rgba(179,219,185,1);
+    
+}
