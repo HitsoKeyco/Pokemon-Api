@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import { useSelector } from 'react-redux'
-import PokeContainer from '../Home/pokeContainer'
+import PokeContainer from '../Home/PokeContainer'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
