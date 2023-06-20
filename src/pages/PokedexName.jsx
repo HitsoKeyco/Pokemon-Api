@@ -35,7 +35,8 @@ const PokedexName = () => {
                                 <div className="boxNumber">
                                     <p className="number_Pokemon">#{pokemon?.id}</p>
                                 </div>
-                                <h2 className='name_pokemon'>{name}</h2>
+                                <h2 className='name_pokemon_selector'>{name}</h2>
+                                <div className="line"></div>
                                 <ul className="pokemon_weight_height">
                                     <div className="div_1">
                                         <p className="wh">WEIGHT</p>
@@ -68,9 +69,20 @@ const PokedexName = () => {
                                             </ul>
                                         }
                                     </div>
+                                </div>
+                                
+                                <div className="chart">
+                                <p className="stack">STACK</p>
+                                {pokemon && <Chart pokemon={pokemon} />}
                                 </div>    
-                                <Chart  pokemon={pokemon}/>  
-                                                                
+                                
+                                <p className="stack">MOVES</p>    
+                                <div className="moves">
+                                
+                                    {pokemon?.moves.map((movesInfo, index) => (
+                                                    <li className='list_moves' key={index}>{movesInfo.move.name}</li>
+                                    ))}
+                                </div>                                                              
                             </div>                            
                         </article>
                     )

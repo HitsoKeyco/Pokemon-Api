@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Noto Sans Symbols', sans-serif;
     font-size: 1rem;
+    
 }
 
 .home_container {
@@ -18,6 +19,7 @@
 
 
 }
+
 
 .img_top {
 
@@ -375,15 +377,6 @@ ul {
 
 }
 
-.selector {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-
-
 .img_pokemon_search {
     width: 100%;
     max-width: 200px;
@@ -392,7 +385,7 @@ ul {
 }
 
 .list_type {
-    background-color: lightsalmon;
+    background-color: rgb(58, 211, 44);
     color: white;
     width: max-content;
     padding-left: 10px;
@@ -434,13 +427,13 @@ ul {
 .details_pokemon_ability {
     text-align: center;
     border-bottom: 2px solid rgb(214, 82, 148);
-    color: rgb(214, 82, 148);
+    color: rgba(255, 255, 255, 0.733);
 }
 
 .details_pokemon_type {
     text-align: center;
     border-bottom: 2px solid  lightsalmon;
-    color: lightsalmon;
+    color: rgba(255, 255, 255, 0.733);
 }
 
 .pokemon_weight_height {
@@ -449,6 +442,26 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    background-color: rgba(255, 255, 255, 0.342);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+
+.name_pokemon_selector{
+    text-transform: capitalize;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.856);    
+    
+    
+}
+.line{
+    height: 2px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.336);
+    margin-bottom: 15px;
+
 
 }
 
@@ -459,19 +472,30 @@ ul {
 
 .wh {
     font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.733);
 }
 
+.weight{
+    color: rgba(255, 255, 255, 0.733);
+}
+.height{
+    color: rgba(255, 255, 255, 0.733);
+}
+
+
 .boxNumber {
+    
     height: 40px;
     width: max-content;
     padding-left: 5px;
     padding-right: 5px;
 
-    border: 2px solid rgba(0, 0, 0, 0.295);
+    border: 2px solid rgba(255, 255, 255, 0.295);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .pagination {
@@ -523,13 +547,65 @@ ul {
     color: red;
 }
 
-.cardSearch { 
+
+.stack{
+    font-weight: 500;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.moves{
     width: 100%;
-    max-width: 600px;
-    height: 800px;
-    display: flex;    
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.list_moves{
+    padding-left: 5px;
+    padding-right: 5px;
+    background: rgb(226,198,45);
+background: linear-gradient(117deg, rgb(226, 102, 45) 0%, rgb(223, 122, 41) 63%, rgb(197, 89, 62) 100%);
+    border-radius: 5px;
+    color: white;
+}
+
+.selector{
+    width: 100%;
+    height: max-content;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(131,58,180);
+background: linear-gradient(0deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.chart{
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     
 }
 
+.cardSearch{
+    width: 100%;
+    max-width: 550px;
+    
+    margin-left:25px ;
+    margin-right:25px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

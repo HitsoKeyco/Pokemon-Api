@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
@@ -36,13 +35,24 @@ const Chart = ({ pokemon }) => {
         },
     ];
 
+    const renderCustomTick = (props) => {
+        const { payload } = props;
+        const { value } = payload;
+
+        return (
+            <text x={props.x} y={props.y} dy={8} fill="#ffffff" fontSize={12} textAnchor="middle">
+                {value}
+            </text>
+        );
+    };
+
     return (
-        <ResponsiveContainer width="90%" height="50%">
+        <ResponsiveContainer width="90%" height="90%" >
             <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
                 <PolarGrid />
-                <PolarAngleAxis dataKey="subject" />
+                <PolarAngleAxis dataKey="subject" tick={renderCustomTick} />
                 <PolarRadiusAxis domain={[0, 150]} /> {/* Establecer el rango de 0 a 150 */}
-                <Radar name="Mike" dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
+                <Radar name="Mike" dataKey="A" stroke="#8efa87" fill="#8874d8" fillOpacity={0.5} />
             </RadarChart>
         </ResponsiveContainer>
     );
