@@ -525,3 +525,17 @@ ul {
     font-size: 1em;
     color: red;
 }
+
+.recharts-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.recharts-surface{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+
+}
