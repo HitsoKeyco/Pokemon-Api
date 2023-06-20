@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import useFetch from '../hooks/useFetch'
 import {useSelector} from 'react-redux'
-import PokeContainer from '../Home/PokeContainer'
+import PokeContainer from '../Home/pokeContainer'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
@@ -11,8 +11,9 @@ const Pokedex = () => {
   const [selectValue, setSelectValue] = useState('all-pokemons')
   const trainerName = useSelector(states => states.trainerName)
 
-  let url = 'https://pokeapi.co/api/v2/pokemon?limit=1289&offset=0'
+  let url = 'https://pokeapi.co/api/v2/pokemon?limit=1281&offset=0'
   
+
   
   const [pokemons, getAllPokemons, hasError, setPokemons] = useFetch(url)
 

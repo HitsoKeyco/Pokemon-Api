@@ -387,15 +387,9 @@ ul {
 
 .cardSearch {
     width: 100%;
-    max-width: 550px;
-    
-    height: 800px;
-    border-radius: 0.5em;
-    font-size: 1rem;
-
-    background-color: white;
-    border: 10px solid rgba(60, 158, 109, 0.555);
-    display: flex;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;    
     flex-direction: column;
     align-items: center;
     margin: 25px;
@@ -450,7 +444,7 @@ ul {
 
 .pokemon_weight_height {
     display: flex;
-    
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -530,12 +524,15 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
+    
 }
 
 
 .recharts-surface{
     width: 100%;
-    max-width: 350px;
+    max-width: 600px;
     height: auto;
 
 }

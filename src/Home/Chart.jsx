@@ -3,6 +3,8 @@ import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
 const Chart = ({ pokemon }) => {
+
+    console.log(pokemon);
     const data = [
         {
             subject: 'HP',

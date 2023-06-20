@@ -68,9 +68,10 @@ const PokedexName = () => {
                                             </ul>
                                         }
                                     </div>
-                                </div>
-                                    <Chart  pokemon={pokemon}/>
-                            </div>
+                                </div>    
+                                <Chart  pokemon={pokemon}/>  
+                                                                
+                            </div>                            
                         </article>
                     )
             }
