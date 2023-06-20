@@ -20,12 +20,12 @@ const Chart = ({ pokemon }) => {
 
         },
         {
-            subject: 'Special-attack',
+            subject: 'S-AT',
             A: pokemon?.stats[3].base_stat,
 
         },
         {
-            subject: 'Special-defense',
+            subject: 'S-DF',
             A: pokemon?.stats[4].base_stat,
 
         },
@@ -38,7 +38,7 @@ const Chart = ({ pokemon }) => {
 
     return (
         <ResponsiveContainer width="100%" height="100%">
-            <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
+            <RadarChart cx="50%" cy="50%" outerRadius="50%" data={data}>
                 <PolarGrid />
                 <PolarAngleAxis dataKey="subject" />
                 <PolarRadiusAxis domain={[0, 150]} /> {/* Establecer el rango de 0 a 150 */}
