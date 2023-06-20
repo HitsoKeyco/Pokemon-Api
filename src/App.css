@@ -387,6 +387,7 @@ ul {
 .img_pokemon_search {
     width: 100%;
     max-width: 200px;
+    padding-top: 50px;
 
 }
 
@@ -462,7 +463,9 @@ ul {
 
 .boxNumber {
     height: 40px;
-    width: 40px;
+    width: max-content;
+    padding-left: 5px;
+    padding-right: 5px;
 
     border: 2px solid rgba(0, 0, 0, 0.295);
     border-radius: 5px;
