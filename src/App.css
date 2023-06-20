@@ -389,7 +389,7 @@ ul {
     width: 100%;
     max-width: 550px;
     
-    max-height: max-content;
+    height: 750px;
     border-radius: 0.5em;
     font-size: 1rem;
 
