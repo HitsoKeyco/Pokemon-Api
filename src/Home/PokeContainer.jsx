@@ -20,7 +20,7 @@ const PokeContainer = ({ pokemons }) => {
             {currentPokeData?.map((pokemon) => (
                 <PokeCard key={pokemon.url} url={pokemon.url} />
             ))}
-            
+
         </div>
         <ReactPaginate
                 previousLabel={'<'}
@@ -28,7 +28,7 @@ const PokeContainer = ({ pokemons }) => {
                 breakLabel={'...'}
                 pageCount={Math.ceil(pokemons?.length / itemsPerPage)}
                 marginPagesDisplayed={2}
-                pageRangeDisplayed={5}
+                pageRangeDisplayed={3}
                 onPageChange={handlePageChange}
                 containerClassName={'pagination'}
                 activeClassName={'active'}
