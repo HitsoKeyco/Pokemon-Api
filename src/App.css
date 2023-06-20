@@ -388,7 +388,7 @@ ul {
 .cardSearch {
     width: 100%;
     max-width: 550px;
-    height: 100%;
+    
     max-height: max-content;
     border-radius: 0.5em;
     font-size: 1rem;
