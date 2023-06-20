@@ -11,12 +11,14 @@ const Pokedex = () => {
   const [selectValue, setSelectValue] = useState('all-pokemons')
   const trainerName = useSelector(states => states.trainerName)
 
-  let url = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
+  let url = 'https://pokeapi.co/api/v2/pokemon?limit=1289&offset=0'
+  
   
   const [pokemons, getAllPokemons, hasError, setPokemons] = useFetch(url)
+
   const urlTypes = 'https://pokeapi.co/api/v2/type'
   const [types, getAllTypes] = useFetch(urlTypes)
-
+  
   useEffect(() => {
     if(selectValue === 'all-pokemons'){
       getAllPokemons()
@@ -64,13 +66,11 @@ const Pokedex = () => {
             <button className='buttonpokedex'>Search</button>
 
             <select onChange={handleChangeType}>
-              <option value="all-pokemons">All pokemon</option>      
+              <option value="all-pokemons">All pokemon</option>
+
                 {
                   types?.results.map(typeInfo => (
-                    <option 
-                    value={typeInfo.url} 
-                    key={typeInfo.url}
-                    >{typeInfo.name}</option>
+                    <option value={typeInfo.url} key={typeInfo.url}> {typeInfo.name} </option>
                   ))
                 }
             </select>
