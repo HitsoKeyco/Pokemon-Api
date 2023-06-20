@@ -37,8 +37,8 @@ const Chart = ({ pokemon }) => {
     ];
 
     return (
-        <ResponsiveContainer width="100%" height="100%">
-            <RadarChart cx="50%" cy="50%" outerRadius="50%" data={data}>
+        <ResponsiveContainer width="90%" height="50%">
+            <RadarChart cx="50%" cy="50%" outerRadius="70%" data={data}>
                 <PolarGrid />
                 <PolarAngleAxis dataKey="subject" />
                 <PolarRadiusAxis domain={[0, 150]} /> {/* Establecer el rango de 0 a 150 */}
