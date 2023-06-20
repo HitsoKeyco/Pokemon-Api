@@ -154,6 +154,7 @@ button:hover {
 .introwelcome {
     padding-top: 50px;
     font-size: clamp(1em, 3vw, 2em);
+    text-align: center;
 }
 
 select {
