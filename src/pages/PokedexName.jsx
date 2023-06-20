@@ -48,7 +48,7 @@ const PokedexName = () => {
                                 </ul>
                                 <div className="datails">
                                     <div className="type">
-                                        <p className='details_pokemon_'>Type</p>
+                                        <p className='details_pokemon_type'>Type</p>
                                         {
                                             <ul className='type_pokemon'>
                                                 {pokemon?.types?.map((typeInfo, index) => (
@@ -59,7 +59,7 @@ const PokedexName = () => {
                                         }
                                     </div>
                                     <div className="hability">
-                                        <p className='details_pokemon_'>Hability</p>
+                                        <p className='details_pokemon_ability'>Ability</p>
                                         {
                                             <ul className='type_pokemon'>
                                                 {pokemon?.abilities.map((abilityInfo, index) => (

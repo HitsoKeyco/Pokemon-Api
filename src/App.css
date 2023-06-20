@@ -221,8 +221,7 @@ select {
 
 
 .name_pokemon {
-    text-transform: capitalize;
-    padding-top: 8px;
+    text-transform: capitalize;    
     font-size: 1.8em;
     text-align: center;
 }
@@ -427,11 +426,20 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap:10px
 
 }
 
-.details_pokemon_ {
+.details_pokemon_ability {
     text-align: center;
+    border-bottom: 2px solid rgb(214, 82, 148);
+    color: rgb(214, 82, 148);
+}
+
+.details_pokemon_type {
+    text-align: center;
+    border-bottom: 2px solid  lightsalmon;
+    color: lightsalmon;
 }
 
 .pokemon_weight_height {
