@@ -48,9 +48,12 @@ const Pokedex = () => {
 
   return (
     <>
-      <img className='headerpokedex' src="headerpokedex.svg" alt="" />
-
       <div className="main">
+          <div className="header">
+            <div ><img className="logo" src="logopokedex.svg" alt="" /> </div>
+            <div ><img className="pokeball" src="pokebola.svg" alt="" /> </div>
+          </div>
+          
         <p className='introwelcome'> Welcome <span className='nameUser'>{trainerName}</span> , you cant find your favorite pokemon..!! </p>
 
         <form onClick={handleSubmit} className='formpokedex'>
@@ -78,6 +81,11 @@ const Pokedex = () => {
           <p>Loading...</p>
         )}
       </div>
+      <footer>
+        <div className="contfooter">
+          <div><img className="pokeball_footer" src="pokebola.svg" alt="" /></div>
+        </div>
+      </footer>
     </>
   )
 }
