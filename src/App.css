@@ -510,7 +510,8 @@ ul {
     color: red;
 }
 
-.cardSearch {    
+.cardSearch { 
+    background-color: beige;   
     width: 100%;
     max-width: 500px;
     height: 800px;
