@@ -403,6 +403,7 @@ ul {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    font-size: 0.8em;
 
 }
 
@@ -410,10 +411,11 @@ ul {
     background-color: rgb(214, 82, 148);
     color: white;
     width: max-content;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
     border-radius: 5px;
-
+    font-size: 0.8em;
+    
     display: flex;
     justify-content: center;
     align-items: center;
