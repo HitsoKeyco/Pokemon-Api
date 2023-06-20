@@ -619,7 +619,7 @@ ul {
 .header {
     width: 100%;
     height: 100px;
-    background-image: url(headerpokedex.svg);
+    background-image: url('/headerpokedex.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -647,7 +647,7 @@ ul {
     width: 100%;
     height: 200px;
     margin-top: 50px;
-    background-image: url(headerpokedex.svg);
+    background-image: url('/headerpokedex.svg');
     background-size: cover;
     background-image: center;
     background-repeat: no-repeat;
