@@ -190,7 +190,7 @@ select {
 
 html {
     background: rgb(255, 255, 255);
-    background-image: url('bgApp.svg');
+    background-image: url('/bgApp.svg');
     background-repeat: repeat;
     background-size: 5%;
 }
@@ -229,7 +229,7 @@ html {
 
 .description_pokemon {
     background-color: rgba(248, 248, 255, 0.808);
-    background-image: url('bgpokebola.svg');
+    background-image: url('/bgpokebola.svg');
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ ul {
 
 .fire {
     border: 5px solid #FF0000;
-    background-image: url('fire.png');
+    background-image: url('/fire.png');
     border-image: linear-gradient(to bottom, #d83113, #bb7710) 1;
     background-size: cover;
 }
@@ -319,7 +319,7 @@ ul {
 
 .water {
     border: 5px solid #0098FF;
-    background-image: url('water.png');
+    background-image: url('/water.png');
     border-image: linear-gradient(to bottom, #1F416D, #0098FF) 1;
     background-size: cover;
 }
@@ -330,7 +330,7 @@ ul {
 
 .bug {
     border: 5px solid rgba(103, 58, 147, 1);
-    background-image: url('bug.png');
+    background-image: url('/bug.png');
     border-image: linear-gradient(to bottom, #0b6613, #186d18) 1;
     background-size: cover;
 }
@@ -341,7 +341,7 @@ ul {
 
 .grass {
     border: 5px solid rgb(35, 112, 46);
-    background-image: url('grass.png');
+    background-image: url('/grass.png');
     border-image: linear-gradient(to bottom, #0b6613, #10bb10) 1;
     background-size: cover;
 }
@@ -352,7 +352,7 @@ ul {
 
 .normal {
     border: 5px solid #C0C0C0;
-    background-image: url('normal.png');
+    background-image: url('/normal.png');
     border-image: linear-gradient(to bottom, #575656, #C0C0C0) 1;
     background-size: cover;
 }
@@ -363,7 +363,7 @@ ul {
 
 .fighting {
     border: 5px solid #FFA500;
-    background-image: url('fighting.png');
+    background-image: url('/fighting.png');
     border-image: linear-gradient(to bottom, #af7508, #e99802) 1;
     background-size: cover;
 }
@@ -374,7 +374,7 @@ ul {
 
 .flying {
     border: 5px solid #87CEEB;
-    background-image: url('flying.png');
+    background-image: url('/flying.png');
     border-image: linear-gradient(to bottom, #87CEEB, #87CEEB) 1;
     background-size: cover;
 }
@@ -386,7 +386,7 @@ ul {
 
 .poison {
     border: 5px solid #993399;
-    background-image: url('flying.png');
+    background-image: url('/flying.png');
     border-image: linear-gradient(to bottom, #993399, #993399) 1;
     background-size: cover;
 }
@@ -398,7 +398,7 @@ ul {
 
 .ground {
     border: 5px solid #8B4513;
-    background-image: url('ground.png');
+    background-image: url('/ground.png');
     border-image: linear-gradient(to bottom, #8B4513, #e06d1a) 1;
     background-size: cover;
 }
@@ -409,7 +409,7 @@ ul {
 
 .rock {
     border: 5px solid #A9A9A9;
-    background-image: url('rock.png');
+    background-image: url('/rock.png');
     border-image: linear-gradient(to bottom, #7e7b7b, #949090) 1;
     background-size: cover;
 }
@@ -420,7 +420,7 @@ ul {
 
 .ghost {
     border: 5px solid #4B0082;
-    background-image: url('ghost.png');
+    background-image: url('/ghost.png');
     border-image: linear-gradient(to bottom, #4B0082, #6f06b9) 1;
     background-size: cover;
 }
@@ -431,7 +431,7 @@ ul {
 
 .steel {
     border: 5px solid #808080;
-    background-image: url('steel.png');
+    background-image: url('/steel.png');
     border-image: linear-gradient(to bottom, #808080, #a09f9f) 1;
     background-size: cover;
 }
@@ -442,7 +442,7 @@ ul {
 
 .electric {
     border: 5px solid #FFFF00;
-    background-image: url('electric.png');
+    background-image: url('/electric.png');
     border-image: linear-gradient(to bottom, #FFFF00, #f7f717) 1;
     background-size: cover;
 }
@@ -455,7 +455,7 @@ ul {
 
 .psychic {
     border: 5px solid #FF00FF;
-    background-image: url('psychic.png');
+    background-image: url('/psychic.png');
     border-image: linear-gradient(to bottom, #FF00FF, #ca25ca) 1;
     background-size: cover;
 }
@@ -466,7 +466,7 @@ ul {
 
 .ice {
     border: 5px solid #FFFFFF;
-    background-image: url('ice.png');
+    background-image: url('/ice.png');
     border-image: linear-gradient(to bottom, #FFFFFF, #FFFFFF) 1;
     background-size: cover;
 }
@@ -478,7 +478,7 @@ ul {
 
 .dragon {
     border: 5px solid #FF4500;
-    background-image: url('dragon.png');
+    background-image: url('/dragon.png');
     border-image: linear-gradient(to bottom, #FF4500, #eb8059) 1;
     background-size: cover;
 }
@@ -492,7 +492,7 @@ ul {
 
 .dark {
     border: 5px solid #000000;
-    background-image: url('dark.png');
+    background-image: url('/dark.png');
     border-image: linear-gradient(to bottom, #000000, #000000) 1;
     background-size: cover;
 }
@@ -503,7 +503,7 @@ ul {
 
 .fairy {
     border: 5px solid #FFB6C1;
-    background-image: url('fairy.png');
+    background-image: url('/fairy.png');
     border-image: linear-gradient(to bottom, #FFB6C1, #e7c3c8) 1;
     background-size: cover;
 }
@@ -514,7 +514,7 @@ ul {
 
 .unknown {
     border: 5px solid #330c33;
-    background-image: url('unknown.png');
+    background-image: url('/unknown.png');
     border-image: linear-gradient(to bottom, #330c33, #330c33) 1;
     background-size: cover;
 }
@@ -525,7 +525,7 @@ ul {
 
 .shadow {
     border: 5px solid #330c33;
-    background-image: url('shadow.png');
+    background-image: url('/shadow.png');
     border-image: linear-gradient(to bottom, #330c33, #330c33) 1;
     background-size: cover;
 
@@ -748,11 +748,6 @@ ul {
     background: rgb(131, 58, 180);
     background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
-
-/* html {
-    background: rgb(131, 58, 180);
-    background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-} */
 
 .chart {
 
