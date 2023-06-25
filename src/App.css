@@ -716,17 +716,18 @@ ul {
     background-color: #0000003f;
     border-radius: 25px;
     padding: 25px;
-    margin: 25px;
+    margin-left: 25px;
+    margin-right: 25px;    
     width: 100%;
     max-width: 500px;
 }
 
 .section_pokemon_search{
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .section_moves {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .moves {
@@ -765,7 +766,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     
 }
 
