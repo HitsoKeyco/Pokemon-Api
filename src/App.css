@@ -255,15 +255,7 @@ html {
     justify-content: center;
 }
 
-.stack_pokemon {
-    width: 100%;
 
-    display: flex;
-    flex-wrap: wrap;
-
-
-
-}
 
 .type_pokemon_card {
     background-color: green;
@@ -718,12 +710,31 @@ ul {
     text-align: center;
 }
 
+.section_moves, .section_pokemon_search, .section_stack{
+    display: flex;
+    flex-direction: column;
+    background-color: #0000003f;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.section_pokemon_search{
+    margin-top: 50px;
+}
+
+.section_moves {
+    margin-bottom: 50px;
+}
+
 .moves {
     width: 100%;
     padding: 25px;
-    display: flex;
+    display: flex;    
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content:space-between;
     align-items: center;
     list-style: none;
     gap: 10px;
@@ -738,35 +749,39 @@ ul {
     color: white;
 }
 
-.selector {
+.cont{
     width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    height: auto;
     background: rgb(131, 58, 180);
     background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
-.chart {
-
+.selector {
     width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+
+.chart {
     height: 400px;
+    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+
 }
 
-.cardSearch {
-    width: 100%;
-    max-width: 550px;
-
-    margin-left: 25px;
-    margin-right: 25px;
-
+.cardSearch {    
     display: flex;
     flex-direction: column;
     justify-content: center;
