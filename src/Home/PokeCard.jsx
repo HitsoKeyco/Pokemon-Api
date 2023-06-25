@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import useFetch from '../hooks/useFetch'
 import { useNavigate } from 'react-router-dom'
+import TypeColors from '../Components/TypeColors'
 
 
 const PokeCard = ({url}) => {
@@ -11,11 +12,13 @@ const PokeCard = ({url}) => {
     getPokemonbyId()
   }, [])
   
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   const handleNavigate = () => {
     navigate(`/pokedex/${pokemon.name}`)
   }
+
+  console.log(pokemon);
   
   return (
     <article className={`card_pokemon ${pokemon?.types[0].type.name}`} onClick={handleNavigate}>
@@ -28,11 +31,9 @@ const PokeCard = ({url}) => {
 
           
           <ul className='type_pokemon'>
-            {
-              pokemon?.types.map(typeInfo=> (
-                <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
-              ))
-            }
+            
+              <TypeColors pokemon={pokemon}/>
+            
           </ul>
           
           <footer>
